@@ -5,6 +5,6 @@
     "postcss-spiffing": "^0.1.0"
   },
   "scripts": {
-    "convert": "node main.js"
+    "convert": "node -r esm main.js"
   }
 }

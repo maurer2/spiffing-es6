@@ -1,7 +1,7 @@
-var postcss = require("postcss");
-var spiffing = require("postcss-spiffing");
-var fs = require("fs");
+import postcss from 'postcss';
+import spiffing from 'postcss-spiffing';
+import * as fs from 'fs';
 
-var css = fs.readFileSync("source.css");
+const css = fs.readFileSync('random.css');
 
 console.log(postcss(spiffing()).process(css).css);
